@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bella Luna — modern women's clothing and accessories.">
+  <title>Bella Luna | Clothing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="#">BELLA <span>LUNA</span></a>
+    <nav>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="cart-btn" onclick="toggleCart()">Bag <span id="cartCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">NEW COLLECTION</p>
+        <h1>Style that feels<br><em>like you.</em></h1>
+        <p>Discover timeless pieces, effortless silhouettes and everyday essentials curated by Bella Luna.</p>
+        <a class="button" href="#shop">Shop the collection</a>
+      </div>
+    </section>
+
+    <section id="shop" class="shop">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">BELLA LUNA</p>
+          <h2>Featured pieces</h2>
+        </div>
+        <p>Simple. Feminine. Effortless.</p>
+      </div>
+
+      <div class="products">
+        <article class="product">
+          <div class="product-img">PHOTO 01</div>
+          <div class="product-info"><h3>Luna Satin Dress</h3><p>€49.90</p><button onclick="addToCart('Luna Satin Dress',49.90)">Add to bag</button></div>
+        </article>
+        <article class="product">
+          <div class="product-img">PHOTO 02</div>
+          <div class="product-info"><h3>Cloud Knit Top</h3><p>€29.90</p><button onclick="addToCart('Cloud Knit Top',29.90)">Add to bag</button></div>
+        </article>
+        <article class="product">
+          <div class="product-img">PHOTO 03</div>
+          <div class="product-info"><h3>Amalfi Trousers</h3><p>€39.90</p><button onclick="addToCart('Amalfi Trousers',39.90)">Add to bag</button></div>
+        </article>
+        <article class="product">
+          <div class="product-img">PHOTO 04</div>
+          <div class="product-info"><h3>Bella Blazer</h3><p>€59.90</p><button onclick="addToCart('Bella Blazer',59.90)">Add to bag</button></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div>
+        <p class="eyebrow">OUR STORY</p>
+        <h2>Made for your everyday moments.</h2>
+      </div>
+      <p>Bella Luna is a modern clothing boutique focused on pieces you can wear, love and style your own way. Replace this text with your real story when you're ready.</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <p class="eyebrow">GET IN TOUCH</p>
+      <h2>Questions? We'd love to hear from you.</h2>
+      <p>Instagram: <strong>@bellaluna</strong> · Email: <strong>hello@bellaluna.example</strong></p>
+    </section>
+  </main>
+
+  <aside id="cart" class="cart">
+    <button class="close" onclick="toggleCart()">×</button>
+    <h2>Your bag</h2>
+    <div id="cartItems"><p>Your bag is empty.</p></div>
+    <div class="total">Total: €<span id="cartTotal">0.00</span></div>
+    <button class="checkout" onclick="alert('Connect this button to your chosen payment provider before accepting payments.')">Checkout</button>
+  </aside>
+
+  <footer>© 2026 Bella Luna. All rights reserved.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
